@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webpage Layout</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css">
+  </head>
+  <body>
+    <header>
+      <h1>Logoipsum</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="Sightseeing.html">Sightseeing</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social-media">
+        <a href="#" aria-label="Facebook"
+          ><img src="facebook.png" alt="Facebook"
+        /></a>
+        <a href="#" aria-label="Instagram"
+          ><img src="instagram (1).png" alt="Instagram"
+        /></a>
+        <a href="#" aria-label="LinkedIn"
+          ><img src="linkedin-logo-.png" alt="LinkedIn"
+        /></a>
+        <a href="#" aria-label="Twitter"
+          ><img src="twitter.png" alt="Twitter"
+        /></a>
+      </div>
+    </header>
+
+    
+    <section class="hero">
+      <h1>Contact us</h1>
+      <div class="background-image"></div>
+    </section>
+    
+
+    <section class="contact-section">
+        <div class="contact-container">
+            
+            <div class="contact-details">
+                <h2>Contact Details</h2>
+                <p>
+                    Είμαστε εδώ για να σας βοηθήσουμε να οργανώσετε τις τέλειες διακοπές. 
+                    Επικοινωνήστε μαζί μας για πληροφορίες σχετικά με πακέτα διακοπών, 
+                    περιηγήσεις, ή άλλες ταξιδιωτικές υπηρεσίες. 
+                </p>
+
+                <p>
+                    <img src="lo.png" alt="Location" class="icon" />
+                    LEYKOSIAS,29
+                  </p>
+        
+                  <p>
+                    <img src="phone.png" alt="Call" class="icon" />
+                    (210)9960017
+                  </p>
+        
+                  <p>
+                    <img src="env.png" alt="Email" class="icon" />
+                    email@email.com.
+                  </p>
+
+                
+
+
+
+
+                  <div class="social-icon">
+                    <img src="facebook.png" alt="Facebook" />
+                    <img src="instagram (1).png" alt="Instagram" />
+                    <img src="linkedin-logo-.png" alt="LinkedIn" />
+                    <img src="twitter.png" alt="Twitter" />
+                  </div>
+
+            </div>
+
+            
+            <div class="contact-form">
+                <h2>Contact Form</h2>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="email" placeholder="Confirm Email" required>
+                    <input type="tel" placeholder="Phone">
+                    <input type="text" placeholder="Address">
+                    <textarea placeholder="Input" rows="5"></textarea>
+                    <button type="submit">Submit Form</button>
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <section class="map-section">
+        <h2>Our Location</h2>
+        <div id="map"></div>
+        <p>
+            <a href="https://www.google.com/maps/place/Lefkosias+29,+Glifada+165+62/@37.89997,23.7697416,17z/data=!3m1!4b1!4m6!3m5!1s0x14a195fc89b565bd:0x688cb657ceae647f!8m2!3d37.89997!4d23.7723165!16s%2Fg%2F11hhtv38jn?" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                View on Google Maps
+            </a>
+        </p>
+    </section>
+    <script>
+    
+        const map = L.map('map').setView([37.9838, 23.7275], 13); 
+
+        
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        
+        L.marker([37.89997, 23.772315]).addTo(map)
+            .bindPopup('<b>Tourist Office</b><br>LEYKOSIAS,29.').openPopup();
+    </script>
+    <section class="subscribe-section">
+      <div class="background-image"></div>
+      <div class="subscribe-box">
+          <h2>Subscribe</h2>
+          <p>
+              Bring to the table win-win survival strategies to ensure proactive domination.
+              At the end of the day, going forward, a new normal that has evolved from generation.
+          </p>
+          <form class="subscribe-form">
+              <input type="email" placeholder="Enter your email here" required>
+              <button type="submit">Subscribe</button>
+          </form>
+      </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2>Logoipsum</h2>
+        <p>
+          Μην χάσετε την ευκαιρία να ανακαλύψετε τη μαγεία της Αθήνας με έναν
+          μοναδικό τρόπο, ξεκινήστε την περιπέτειά σας στην πιο συναρπαστική
+          πόλη του κόσμου!
+        </p>
+        <div class="social-icon">
+          <img src="facebook.png" alt="Facebook" />
+          <img src="instagram (1).png" alt="Instagram" />
+          <img src="linkedin-logo-.png" alt="LinkedIn" />
+          <img src="twitter.png" alt="Twitter" />
+        </div>
+      </div>
+  
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p><img src="lo.png" alt="Location" class="icon" /> LEYKOSIAS,29</p>
+        <p><img src="phone.png" alt="Call" class="icon" /> (210)9960017</p>
+        <p><img src="env.png" alt="Email" class="icon" /> email@email.com.</p>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="history.html">History</a></p>
+        <p><a href="Sightseeing.html">Sightseeing</a></p>
+        <p><a href="events.html">Events</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Support</h3>
+        <p><a href="#">Help Center</a></p>
+        <input type="email" id="newsletter-email" placeholder="Enter your email here" required />
+        <button type="button" id="subscribe-btn">Subscribe</button>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>
+        Copyright © 2025 Nektarios lumani<br />
+        Χάρτης: <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> &
+        <a href="https://leafletjs.com/" target="_blank">Leaflet</a>
+      </p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Services</a>
+      </div>
+    </div>
+  </footer>
+  <script src="footer.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

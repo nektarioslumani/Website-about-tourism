@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webpage Layout</title>
+    <link rel="stylesheet" href="Sightseeing.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Logoipsum</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="Sightseeing.html">Sightseeing</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social-media">
+        <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="instagram (1).png" alt="Instagram" /></a>
+        <a href="#"><img src="linkedin-logo-.png" alt="LinkedIn" /></a>
+        <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1>Sightseeing</h1>
+      <div class="background-image"></div>
+    </section>
+
+    <div class="container">
+      <div class="sidebar">
+        <h3>Activity</h3>
+        <label><input type="checkbox" value="museums" /> Museums</label>
+        <label><input type="checkbox" value="restaurants" /> Restaurants</label>
+        <label><input type="checkbox" value="monuments" /> Monuments</label>
+        <label><input type="checkbox" value="flea" /> Flea Markets</label>
+
+        <h3>Destination</h3>
+        <label><input type="checkbox" value="plaka" /> Plaka</label>
+        <label><input type="checkbox" value="monastiraki" /> Monastiraki</label>
+        <label><input type="checkbox" value="kolonaki" /> Kolonaki</label>
+        <label><input type="checkbox" value="kifisia" /> Kifisia</label>
+        <label><input type="checkbox" value="glyfada" /> Glyfada</label>
+
+        <button id="filter-btn">Filter</button>
+      </div>
+
+      <div class="gallery">
+        <div class="card" data-category="museums plaka">
+          <img src="9d22391045ab0d71674df57bba1a68d1.jpg" alt="Trip" />
+          <div class="card-content">
+            <h4>Μουσεία στην Πλάκα</h4>
+            <p>
+              Ξενάγηση στην Ακρόπολη, τον Παρθενώνα και το Μουσείο της
+              Ακρόπολης.
+            </p>
+            <p class="price">250€</p>
+          </div>
+        </div>
+
+        <div class="card" data-category="romantic glyfada restaurants">
+          <img src="2bf61efedf1b9b8d63ae644f93c8d40b.jpg" alt="Trip" />
+          <div class="card-content">
+            <h4>Ρομαντικό Δείπνο στη Γλυφάδα</h4>
+            <p>Rooftop δείπνο και βόλτα με θέα το ηλιοβασίλεμα.</p>
+            <p class="price">250€</p>
+          </div>
+        </div>
+
+        <div class="card" data-category="family kifisia monuments">
+          <img src="006cdc46fc684fbd9b373f6832c3b93a.jpg" alt="Trip" />
+          <div class="card-content">
+            <h4>Οικογενειακή Περιπέτεια</h4>
+            <p>Επίσκεψη στον Εθνικό Κήπο, Ζάππειο και διαδραστικά μουσεία.</p>
+            <p class="price">250€</p>
+          </div>
+        </div>
+
+        <div class="card" data-category="luxury kolonaki restaurants">
+          <img src="25f737d70b621b2ac4a85e49873766de.jpg" alt="Trip" />
+          <div class="card-content">
+            <h4>Luxury Experience στο Κολωνάκι</h4>
+            <p>Διαμονή σε 5* ξενοδοχεία και private ξεναγήσεις.</p>
+            <p class="price">250€</p>
+          </div>
+        </div>
+
+        <div class="card" data-category="nightlife monastiraki">
+          <img src="bb4ce8900bd347fc7864d17568c3f9f2.jpg" alt="Trip" />
+          <div class="card-content">
+            <h4>Νυχτερινή Ζωή στο Μοναστηράκι</h4>
+            <p>Κοκτέιλ, κλαμπ και αυθεντική νυχτερινή εμπειρία.</p>
+            <p class="price">250€</p>
+          </div>
+        </div>
+
+        <div class="card" data-category="short plaka monuments">
+          <img src="7abd20d80663755d2ba73a130e4d8480.jpg" alt="Trip" />
+          <div class="card-content">
+            <h4>Σύντομη Απόδραση στην Πλάκα</h4>
+            <p>Weekend πακέτο με γρήγορες ξεναγήσεις και γεύματα.</p>
+            <p class="price">250€</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="filter.js"></script>
+
+    <section class="info-section">
+      <div class="info-container">
+        <div class="info-image">
+          <img src="athenspo.jpg" alt="Group" />
+        </div>
+        <div class="info-text">
+          <h2>Ζήστε την Ιστορία και τον Πολιτισμό.</h2>
+          <p>
+            Ανακαλύψτε μοναδικές εμπειρίες στη φύση με περιπάτους σε μαγευτικά
+            μονοπάτια και δραστηριότητες για όλες τις ηλικίες. Γνωρίστε τη
+            βιοποικιλότητα και απολαύστε τη χαλάρωση.
+          </p>
+          <ul>
+            <li>Καθοδηγούμενες περιηγήσεις με έμπειρους ξεναγούς.</li>
+            <li>Δραστηριότητες για οικογένειες και παιδιά.</li>
+            <li>Ευκαιρίες για φωτογράφιση φυσικών τοπίων.</li>
+          </ul>
+          <a href="contact.html" class="contact us">Contact us</a>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section">
+      <div class="contact-container">
+        <h2>Have more questions?</h2>
+        <a href="contact.html" class="contact-us">Contact Us</a>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2>Logoipsum</h2>
+          <p>
+            Μην χάσετε την ευκαιρία να ανακαλύψετε τη μαγεία της Αθήνας με έναν
+            μοναδικό τρόπο, ξεκινήστε την περιπέτειά σας στην πιο συναρπαστική
+            πόλη του κόσμου!
+          </p>
+          <div class="social-icon">
+            <img src="facebook.png" alt="Facebook" />
+            <img src="instagram (1).png" alt="Instagram" />
+            <img src="linkedin-logo-.png" alt="LinkedIn" />
+            <img src="twitter.png" alt="Twitter" />
+          </div>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact</h3>
+
+          <p>
+            <img src="lo.png" alt="Location" class="icon" />
+            LEYKOSIAS,29
+          </p>
+
+          <p>
+            <img src="phone.png" alt="Call" class="icon" />
+            (210)9960017
+          </p>
+
+          <p>
+            <img src="env.png" alt="Email" class="icon" />
+            email@email.com.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="history.css">History</a></p>
+          <p><a href="Sightseeing.html">Sightseeing</a></p>
+          <p><a href="events.html">Events</a></p>
+          <p><a href="contact.html">Contact</a></p>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <p><a href="#">Help Center</a></p>
+          <input type="email" placeholder="Enter your email here" required />
+          <button type="submit">Subscribe</button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright © 2025 Nektarios lumani</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Services</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
